@@ -10,7 +10,7 @@ import org.elasticsearch.client.RestClient;
 import java.io.IOException;
 import java.util.concurrent.CompletableFuture;
 
-public class _08_ESTest_Document_Async {
+public class _09_ESTest_Async {
     public static void main(String[] args) throws IOException {
         RestClient restClient = RestClient.builder(HttpHost.create("http://localhost:9200")).build();
         ElasticsearchTransport transport = new RestClientTransport(restClient, new JacksonJsonpMapper());
